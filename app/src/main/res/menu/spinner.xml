@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bus"
+        android:title="Business" />
+    <item
+        android:id="@+id/edu"
+        android:title="Education" />
+    <item
+        android:id="@+id/vac"
+        android:title="Vacation" />
+    <item
+        android:id="@+id/ple"
+        android:title="Pleasure" />
+</menu>

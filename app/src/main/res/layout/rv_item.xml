@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:cardElevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Kenya"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/departureDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Monday 23, 2020"
+                android:textColor="#000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/departure"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/departure"
+                app:layout_constraintTop_toBottomOf="@+id/departure" />
+
+            <TextView
+                android:id="@+id/departureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="12.23pm"
+                android:textColor="#000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/departureDay"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/departureDay"
+                app:layout_constraintTop_toBottomOf="@+id/departureDay" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/medicalButton"
+                android:layout_width="78dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#C3255B"
+                android:text="Medical"
+                android:textColor="#000"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/departureTime"
+                app:layout_constraintHorizontal_bias="0.315"
+                app:layout_constraintStart_toStartOf="@+id/departureTime"
+                app:layout_constraintTop_toBottomOf="@id/departureTime" />
+
+            <ImageView
+                android:id="@+id/plane"
+                android:layout_width="56dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="68dp"
+                android:src="@drawable/plane"
+                app:layout_constraintBottom_toBottomOf="@+id/departure"
+                app:layout_constraintStart_toEndOf="@+id/departure"
+                app:layout_constraintTop_toTopOf="@+id/departure"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="Nigeria"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/plane"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/plane"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday 24, 2020"
+                android:textColor="#000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/destination"
+                app:layout_constraintStart_toStartOf="@+id/destination"
+                app:layout_constraintTop_toTopOf="@+id/departureDay" />
+
+            <TextView
+                android:id="@+id/arrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.23pm"
+                android:textColor="#000"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/departureTime"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.988"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/departureTime" />
+
+            <ImageView
+                android:id="@+id/dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/medicalButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/medicalButton"
+                app:srcCompat="@drawable/menu_dots"
+                android:layout_marginEnd="15dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
